@@ -29,11 +29,15 @@ For a detailed introduction, please see qcmi.test.r.
 #**Installation**
 
 ~to get the development version from GitHub:
+
 install.packages("devtools")
+
 devtools::install_github("joshualiuxu/qcmi")
 
 ~load the package:
+
 Library(“qcmi”)
+
 
 If you find a bug, please file a minimal reproducible example in the issues.
 
