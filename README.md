@@ -51,4 +51,4 @@ Please see the document of qcmi.test.r
 
 #**Pipeline**
 
-![image]( https://github.com/joshualiuxu/qcmi/blob/main/data/FigS4.png)
+![image]( https://github.com/joshualiuxu/qcmi/blob/main/data/pipeline.png)
