@@ -4,7 +4,7 @@ qcmi calculate the strength of biotic associations and quantify the contribution
 
 qcmi provides some convenient verbs to make it easy to process data and results:
 
-
+****
 #**Pipeline**
 
 Step 1. Construct ecological networks for microbial communities. 
@@ -13,6 +13,7 @@ Step 3. Quantify the strength of biotic associations to each local site.
 Step 4. Calculate the effects of biotic associations on alpha and beta diversity of microbial communities.
 
 ![image]( https://github.com/joshualiuxu/qcmi/blob/main/data/Figure1.jpg)
+****
 
 #**Function**
 
