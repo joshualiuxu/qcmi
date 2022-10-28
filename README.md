@@ -1,3 +1,6 @@
+# qcimi <a href="https://github.com/joshualiuxu/qcmi/blob/main/qcmi.test.r/"><img src="https://github.com/joshualiuxu/qcmi/blob/main/data/fig.jpg" width=150 align="right" ></a>
+
+
 #**Overview**
 
 qcmi calculate the strength of biotic associations and quantify the contributions on microbial diversity. 
