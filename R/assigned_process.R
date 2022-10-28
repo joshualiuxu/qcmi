@@ -11,76 +11,86 @@
 #' @references
 #' @export
 
-
 assigned_process = function(link_table_row, OTUabd, p=0.05 ,data,cutoff=0,method=c("dl", "ef")){
 
-  if (method %in% c("dl")) {
+if (method %in% c("dl")) {
+    
+edges =link_table_row
+OTUs = OTUabd 
+distances = data
 
-    edges =link_table_row
-    OTUs = OTUabd
-    distances = data
+OTUs_order = OTUs[,order(names(OTUs))]
+distances_order = distances[order(row.names(distances)),]
+geodist = vegdist(distances_order, method="euclid")
 
-    OTUs_order = OTUs[,order(names(OTUs))]
-    distances_order = distances[order(row.names(distances)),]
-    geodist = vegdist(distances_order, method="euclid")
+test_result = t(apply(edges, 1, FUN=test_link_dl, OTUabd=OTUs_order, geodist=geodist))
+test_result=as.data.frame(test_result)
+#test_result=cbind(row.names(test_result),test_result)
+colnames(test_result)=c("OTU1","OTU2","cor1","P1","cor2","P2")
+#scene1: positive links   double positive covary with geo
+test_result_pick1 = test_result[which((test_result['cor1']>cutoff) & (test_result['cor2']>cutoff) & (test_result['P1']<=p) & (test_result['P2']<=p)),]
 
-    test_result = t(apply(edges, 1, FUN=test_link_dl, OTUabd=OTUs_order, geodist=geodist))
-    test_result_pick = test_result[which((test_result[,3]>=cutoff) & (test_result[,5]>=cutoff) & (test_result[,4]<=p) & (test_result[,6]<=p)),]
-    result_dl= test_result_pick
-
-    colnames(result_dl)=c("OTU1","OTU2","cor1","P1","cor2","P2")
-
-    dl=rep("yes",times=nrow(result_dl))
-
-    result_dl=cbind(result_dl,dl)
-
-
-    return(result_dl)
-  }
-
-  if (method %in% c("ef")) {
-
-    edges =link_table_row
-    OTUs = OTUabd
-    distances = data
-
-    OTUs_order = OTUs[,order(names(OTUs))]
-    distances_order = distances[order(row.names(distances)),]
-    envdist = vegdist(distances_order, method="euclid")
+#scene2: positive links   double negative covary with geo
+test_result_pick2 = test_result[which((test_result[,3]<cutoff) & (test_result[,5]<cutoff) & (test_result[,4]<=p) & (test_result[,6]<=p)),]
 
 
-    #scene1: positive links   double positive covary with env
-    edges1=edges[which((edges[,3]>=cutoff) ),]
-    test_result = t(apply(edges1, 1, FUN=test_link_env, OTUabd=OTUs_order, envdist=envdist))
-    test_result_pick1 = test_result[which((test_result[,3]>cutoff) & (test_result[,5]>cutoff) & (test_result[,4]<=p) & (test_result[,6]<=p)),]
+result= rbind(test_result_pick1 ,test_result_pick2)
+result_dl= result
 
-    #scene2: positive links   double negative covary with env
-    edges2=edges[which((edges[,3]>=cutoff) ),]
-    test_result = t(apply(edges2, 1, FUN=test_link_env, OTUabd=OTUs_order, envdist=envdist))
-    test_result_pick2 = test_result[which((test_result[,3]<cutoff) & (test_result[,5]<cutoff) & (test_result[,4]<=p) & (test_result[,6]<=p)),]
+dl=rep("yes",times=nrow(result_dl))
+result_dl=cbind(result_dl,dl)
 
-    #scene3: negative links   1 - 1+  covary with env
-    edges3=edges[which((edges[,3]<cutoff) ),]
-    test_result = t(apply(edges3, 1, FUN=test_link_env, OTUabd=OTUs_order, envdist=envdist))
-    test_result_pick3 = test_result[which((test_result[,3]<cutoff) & (test_result[,5] > cutoff) & (test_result[,4]<=p) & (test_result[,6]<=p)),]
+return(result_dl)
+} 
 
-    #scene4: negative links   1+ 1- covary with env
-    edges4=edges[which((edges[,3]<cutoff) ),]
-    test_result = t(apply(edges4, 1, FUN=test_link_env, OTUabd=OTUs_order, envdist=envdist))
-    test_result_pick4 = test_result[which((test_result[,3]>cutoff) & (test_result[,5]<cutoff) & (test_result[,4]<=p) & (test_result[,6]<=p)),]
+if (method %in% c("ef")) {
+    
+edges =link_table_row
+OTUs = OTUabd 
+distances = data
 
-
-    result= rbind(test_result_pick1 ,test_result_pick2,test_result_pick3,test_result_pick4)
+OTUs_order = OTUs[,order(names(OTUs))]
+distances_order = distances[order(row.names(distances)),]
+envdist = vegdist(distances_order, method="euclid")
 
 
-    result_ef= result
+#scene1: positive links   double positive covary with env
+edges1=edges[which((edges[,3]>=cutoff) ),]
+test_result = t(apply(edges1, 1, FUN=test_link_env, OTUabd=OTUs_order, envdist=envdist))
+test_result=as.data.frame(test_result)
+test_result_pick1 = test_result[which((test_result[,3]>cutoff) & (test_result[,5]>cutoff) & (test_result[,4]<=p) & (test_result[,6]<=p)),]
 
-    colnames(result_ef)=c("OTU1","OTU2","cor1","P1","cor2","P2")
+#scene2: positive links   double negative covary with env
+edges2=edges[which((edges[,3]>=cutoff) ),]
+test_result = t(apply(edges2, 1, FUN=test_link_env, OTUabd=OTUs_order, envdist=envdist))
+test_result=as.data.frame(test_result)
+test_result_pick2 = test_result[which((test_result[,3]<cutoff) & (test_result[,5]<cutoff) & (test_result[,4]<=p) & (test_result[,6]<=p)),]
 
-    ef=rep("yes",times=nrow(result_ef))
+#scene3: negative links   1- 1+  covary with env
+edges3=edges[which((edges[,3]<cutoff) ),]
+test_result = t(apply(edges3, 1, FUN=test_link_env, OTUabd=OTUs_order, envdist=envdist))
+test_result=as.data.frame(test_result)
+test_result_pick3 = test_result[which((test_result[,3]<cutoff) & (test_result[,5] > cutoff) & (test_result[,4]<=p) & (test_result[,6]<=p)),]
 
-    result_ef=cbind(result_ef,ef)
+#scene4: negative links   1+ 1- covary with env
+edges4=edges[which((edges[,3]<cutoff) ),]
+test_result = t(apply(edges4, 1, FUN=test_link_env, OTUabd=OTUs_order, envdist=envdist))
+test_result=as.data.frame(test_result)
+test_result_pick4 = test_result[which((test_result[,3]>cutoff) & (test_result[,5]<cutoff) & (test_result[,4]<=p) & (test_result[,6]<=p)),]
 
-    return(result_ef)
-  }
+
+result= rbind(test_result_pick1 ,test_result_pick2,test_result_pick3,test_result_pick4)
+
+
+result_ef= result
+
+colnames(result_ef)=c("OTU1","OTU2","cor1","P1","cor2","P2")
+
+ef=rep("yes",times=nrow(result_ef))
+
+result_ef=cbind(result_ef,ef)
+
+return(result_ef)
+} 
 }
+
