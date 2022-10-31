@@ -6,7 +6,7 @@
 
 ## Overview
 
-qcmi calculate the strength of biotic associations and quantify the contributions on microbial diversity. 
+qcmi calculates the strength of biotic associations and quantifies the contributions on microbial diversity. 
 
 qcmi provides some convenient verbs to make it easy to process data and results:
 
@@ -31,11 +31,11 @@ qcmi provides some convenient verbs to make it easy to process data and results:
 
   + filter_ps() filters OTU table by occurrence and abundance.
 
-  + cal_network() calculates correlation network.
+  + cal_network() infers ecological networks.
 
-  + test_link_env() classifies ecological associations of environmental filtering
+  + test_link_env() classifies the ecological associations to environmental filtering
 
-  + test_link_dl() classifies ecological associations of dispersal limitation
+  + test_link_dl() classifies the ecological associations to dispersal limitation
 
   + assigned_process() identifies ecological associations as environmental filtering and dispersal limitation
 
