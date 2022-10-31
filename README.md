@@ -7,7 +7,7 @@ qcmi calculate the strength of biotic associations and quantify the contribution
 
 qcmi provides some convenient verbs to make it easy to process data and results:
 
-****
+
 ## Pipeline
 
   + Step 1. Construct ecological networks for microbial communities. 
@@ -20,7 +20,7 @@ qcmi provides some convenient verbs to make it easy to process data and results:
 
 
 ![image]( https://github.com/joshualiuxu/qcmi/blob/main/data/Figure1.jpg)
-****
+
 
 ## Function
 
@@ -44,7 +44,7 @@ qcmi provides some convenient verbs to make it easy to process data and results:
 
 For a detailed introduction, please see qcmi.test.r.
 
-****
+
 
 ## Installation
 
@@ -60,13 +60,13 @@ devtools::install_github("joshualiuxu/qcmi")
 library(“qcmi”)
 ```
 
-If you find a bug, please file a minimal reproducible example in the issues.
+If you find a bug, please file a minimal reproducible example in the issues
 
-****
+
 
 ## Usage
 
 Please see the document of qcmi.test.r
 
-****
+
 
