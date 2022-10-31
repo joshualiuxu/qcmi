@@ -48,17 +48,17 @@ For a detailed introduction, please see qcmi.test.r.
 
 #**Installation**
 
-+to get the development version from GitHub:
+# to get the development version from GitHub:
 ```r
 # If devtools package is not installed, first install it
 install.packages("devtools")
 devtools::install_github("joshualiuxu/qcmi")
 ```
 
-~load the package:
-
+# load the package:
+```r
 Library(“qcmi”)
-
+```
 
 If you find a bug, please file a minimal reproducible example in the issues.
 
