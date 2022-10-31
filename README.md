@@ -1,14 +1,14 @@
-#**QCMI** <a href="https://github.com/joshualiuxu/qcmi/blob/main/qcmi.test.r/"><img src="https://github.com/joshualiuxu/qcmi/blob/main/data/fig.jpg" width=150 align="right" ></a>
+# qcmi  <a href="https://github.com/joshualiuxu/qcmi/blob/main/qcmi.test.r/"><img src="https://github.com/joshualiuxu/qcmi/blob/main/data/fig.jpg" width=150 align="right" ></a>
 
 
-#**Overview**
+## Overview
 
 qcmi calculate the strength of biotic associations and quantify the contributions on microbial diversity. 
 
 qcmi provides some convenient verbs to make it easy to process data and results:
 
 ****
-#**Pipeline**
+## Pipeline
 
   + Step 1. Construct ecological networks for microbial communities. 
 
@@ -22,7 +22,7 @@ qcmi provides some convenient verbs to make it easy to process data and results:
 ![image]( https://github.com/joshualiuxu/qcmi/blob/main/data/Figure1.jpg)
 ****
 
-#**Function**
+## Function
 
   + trans_ps() converts the data to phyloseq format.
 
@@ -46,7 +46,7 @@ For a detailed introduction, please see qcmi.test.r.
 
 ****
 
-#**Installation**
+## Installation
 
 # to get the development version from GitHub:
 ```r
@@ -64,7 +64,7 @@ If you find a bug, please file a minimal reproducible example in the issues.
 
 ****
 
-#**Usage**
+## Usage
 
 Please see the document of qcmi.test.r
 
