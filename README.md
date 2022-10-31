@@ -1,4 +1,5 @@
-# *QCMI*: An R package for easy modeling, filtering, and quantifying putative biotic associations of microbial communities.
+# *QCMI*
+An R package for easy modeling, filtering, and quantifying putative biotic associations of microbial communities.
 
 <a href="https://github.com/joshualiuxu/qcmi/blob/main/qcmi.test.r/"><img src="https://github.com/joshualiuxu/qcmi/blob/main/data/fig.jpg" width=150 align="right" ></a>
 
