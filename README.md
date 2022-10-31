@@ -19,7 +19,7 @@ qcmi provides some convenient verbs to make it easy to process data and results:
   + Step 4. Calculate the effects of biotic associations on alpha and beta diversity of microbial communities.
 
 
-<img src=" https://github.com/joshualiuxu/qcmi/blob/main/data/Figure1.jpg" width=500 align="middle" >
+<img src="https://github.com/joshualiuxu/qcmi/blob/main/data/Figure1.jpg" width="80%" />
 
 
 ## Function
@@ -48,14 +48,14 @@ For a detailed introduction, please see qcmi.test.r.
 
 ## Installation
 
-# to get the development version from GitHub:
+to get the development version from GitHub:
 ```r
 # If devtools package is not installed, first install it
 install.packages("devtools")
 devtools::install_github("joshualiuxu/qcmi")
 ```
 
-# load the package:
+load the package:
 ```r
 library(“qcmi”)
 ```
