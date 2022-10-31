@@ -10,13 +10,13 @@ qcmi provides some convenient verbs to make it easy to process data and results:
 ****
 #**Pipeline**
 
-Step 1. Construct ecological networks for microbial communities. 
+  + Step 1. Construct ecological networks for microbial communities. 
 
-Step 2. Assign the ecological assembly processes to each significantly pair ASVs. 
+  + Step 2. Assign the ecological assembly processes to each significantly pair ASVs. 
 
-Step 3. Quantify the strength of biotic associations to each local site. 
+  + Step 3. Quantify the strength of biotic associations to each local site. 
 
-Step 4. Calculate the effects of biotic associations on alpha and beta diversity of microbial communities.
+  + Step 4. Calculate the effects of biotic associations on alpha and beta diversity of microbial communities.
 
 
 ![image]( https://github.com/joshualiuxu/qcmi/blob/main/data/Figure1.jpg)
@@ -24,23 +24,23 @@ Step 4. Calculate the effects of biotic associations on alpha and beta diversity
 
 #**Function**
 
-trans_ps() converts the data to phyloseq format.
+  + trans_ps() converts the data to phyloseq format.
 
-filter_ps() filters OTU table by occurrence and abundance.
+  + filter_ps() filters OTU table by occurrence and abundance.
 
-cal_network() calculates correlation network.
+  + cal_network() calculates correlation network.
 
-test_link_env() classifies ecological associations of environmental filtering
+  + test_link_env() classifies ecological associations of environmental filtering
 
-test_link_dl() classifies ecological associations of dispersal limitation
+  + test_link_dl() classifies ecological associations of dispersal limitation
 
-assigned_process() identifies ecological associations as environmental filtering and dispersal limitation
+  + assigned_process() identifies ecological associations as environmental filtering and dispersal limitation
 
-qcmi() quantifies the local intensity of microbial biotic interaction.
+  + qcmi() quantifies the local intensity of microbial biotic interaction.
 
-cal_alphacon() calculates the contributions of microbial interaction on alpha diversity
+  + cal_alphacon() calculates the contributions of microbial interaction on alpha diversity
 
-cal_betacon() calculates the contributions of microbial interaction on beta diversity
+  + cal_betacon() calculates the contributions of microbial interaction on beta diversity
 
 For a detailed introduction, please see qcmi.test.r.
 
@@ -57,7 +57,7 @@ devtools::install_github("joshualiuxu/qcmi")
 
 # load the package:
 ```r
-Library(“qcmi”)
+library(“qcmi”)
 ```
 
 If you find a bug, please file a minimal reproducible example in the issues.
