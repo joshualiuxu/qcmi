@@ -1,4 +1,6 @@
-# *QCMI*: An R package for easy modeling, filtering, and quantifying of microbial ecological associations.  <a href="https://github.com/joshualiuxu/qcmi/blob/main/qcmi.test.r/"><img src="https://github.com/joshualiuxu/qcmi/blob/main/data/fig.jpg" width=150 align="right" ></a>
+# *QCMI*: An R package for easy modeling, filtering, and quantifying of microbial ecological associations.
+
+<a href="https://github.com/joshualiuxu/qcmi/blob/main/qcmi.test.r/"><img src="https://github.com/joshualiuxu/qcmi/blob/main/data/fig.jpg" width=150 align="right" ></a>
 
 
 ## Overview
