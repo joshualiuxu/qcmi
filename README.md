@@ -72,4 +72,31 @@ If you find a bug, please file a minimal reproducible example in the issues
 Please see the document of qcmi.test.r
 
 
+## Contributing
+
+I’m happy to receive bug reports, suggestions, questions, and (most of
+all) contributions to fix problems and add features. I personally prefer
+using the `GitHub` issues system over trying to reach out to me in other
+ways (personal e-mail, Twitter, etc.). Pull Requests for contributions
+are encouraged.
+
+Here are some simple ways in which you can contribute (in the increasing
+order of commitment):
+
+-   Read and correct any inconsistencies in the
+    [documentation](https://github.com/joshualiuxu/qcmi/blob/main/qcmi.test.r)
+
+-   Raise issues about bugs or wanted features
+
+-   Review code
+
+-   Add new functionality (in the form of new plotting functions or
+    helpers for preparing subtitles)
+
+
+## Citation
+
+Not yet QAQ 👻👻👻
+
+
 
