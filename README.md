@@ -1,5 +1,5 @@
 # *QCMI*
-# An R package for easy modeling, filtering, and quantifying putative biotic interactions of microbial communities.
+# An R package for easy modeling, filtering, and quantifying putative biotic associations of microbial communities.
 
 <a href="https://github.com/joshualiuxu/qcmi/blob/main/qcmi.test.r/"><img src="https://github.com/joshualiuxu/qcmi/blob/main/data/fig.jpg" width=150 align="right" ></a>
 
@@ -39,11 +39,11 @@ qcmi provides some convenient verbs to make it easy to process data and results:
 
   + assigned_process() identifies ecological associations as environmental filtering and dispersal limitation
 
-  + qcmi() quantifies the local intensity of microbial biotic interaction.
+  + qcmi() quantifies the local intensity of microbial biotic associations.
 
-  + cal_alphacon() calculates the contributions of microbial interaction on alpha diversity
+  + cal_alphacon() calculates the contributions of microbial associations on alpha diversity
 
-  + cal_betacon() calculates the contributions of microbial interaction on beta diversity
+  + cal_betacon() calculates the contributions of microbial associations on beta diversity
 
 For a detailed introduction, please see qcmi.test.r.
 
