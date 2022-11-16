@@ -1,14 +1,15 @@
 Package: qcma
-Title: QCMA: to quantify putative biotic associations of microbes at the community level
-Version: 0.1.0
+Title: to quantify putative biotic associations of microbes at the community level
+Version: v2022.11.16
 Authors@R: 
     person("Xu", "Liu", , "xliu@issas.ac.cn", role = c("aut", "cre"),
            comment = c(ORCID = "0000-0002-7069-4509"))
-Description: A workflow to dig out putative biotic associations from complex ecological associations and quantify at the community level, which had been compiled as ‘qcma’ R package.
+Description: A workflow to dig out putative biotic associations from complex ecological associations and quantify at the community level, which had been compiled as ‘qcma’ R package. 
+The method consists of four main steps: (ⅰ) constructing ecological networks, (ⅱ) assigning assembly processes, (ⅲ) quantifying biotic associations, and (ⅳ) assessing ecological consequence. Each step has been encapsulated as user-friendly functions that could be easily feasible and flexible. Besides, this package is developed based on a series of commonly used and advanced approaches in microbial ecology, for example, Spiec-Easi.
 License: MIT + file LICENSE
 Encoding: UTF-8
 Roxygen: list(markdown = TRUE)
-RoxygenNote: 7.2.2
+RoxygenNote: 7.1.2
 Suggests: 
     testthat (>= 3.0.0)
 Config/testthat/edition: 3
