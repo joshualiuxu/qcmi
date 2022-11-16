@@ -1,6 +1,6 @@
 Package: qcmi
-Title: quantify the contributions of biotic interaction on microbial diversity patterns
-Version: 0.0.0.9000
+Title: to quantify putative biotic associations of microbes at the community level
+Version: v2022.11.16
 Authors@R: 
     person("Xu", "Liu", , "xliu@issas.ac.cn", role = c("aut", "cre"),
            comment = c(ORCID = "0000-0002-7069-4509"))
