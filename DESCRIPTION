@@ -1,14 +1,14 @@
-Package: qcmi
-Title: to quantify putative biotic associations of microbes at the community level
-Version: v2022.11.16
+Package: qcma
+Title: QCMA: to quantify putative biotic associations of microbes at the community level
+Version: 0.1.0
 Authors@R: 
     person("Xu", "Liu", , "xliu@issas.ac.cn", role = c("aut", "cre"),
            comment = c(ORCID = "0000-0002-7069-4509"))
-Description: quantify the contributions of biotic interaction on microbial diversity patterns
+Description: A workflow to dig out putative biotic associations from complex ecological associations and quantify at the community level, which had been compiled as ‘qcma’ R package.
 License: MIT + file LICENSE
 Encoding: UTF-8
 Roxygen: list(markdown = TRUE)
-RoxygenNote: 7.1.2
+RoxygenNote: 7.2.2
 Suggests: 
     testthat (>= 3.0.0)
 Config/testthat/edition: 3

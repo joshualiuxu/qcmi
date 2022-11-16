@@ -9,14 +9,8 @@ pos.mean(vector)
 \arguments{
 \item{vector}{}
 }
-\value{
-
-}
 \description{
 Create function that averages only positive values in a vector
-}
-\references{
-
 }
 \author{
 Contact: Xu Liu \email{xliu@issas.ac.cn}

@@ -1,10 +1,12 @@
 #' Identifying ecological associations as environmental filtering and dispersal limitation
+#'
 #' @param link_table_row
 #' @param  OTUabd
 #' @param   p
 #' @param   data
 #' @param   cutoff
 #' @param   method
+#'
 #' @examples
 #' @return
 #' @author Contact: Xu Liu \email{xliu@@issas.ac.cn}
@@ -14,9 +16,9 @@
 assigned_process = function(link_table_row, OTUabd, p=0.05 ,data,cutoff=0,method=c("dl", "ef")){
 
 if (method %in% c("dl")) {
-    
+
 edges =link_table_row
-OTUs = OTUabd 
+OTUs = OTUabd
 distances = data
 
 OTUs_order = OTUs[,order(names(OTUs))]
@@ -41,12 +43,12 @@ dl=rep("yes",times=nrow(result_dl))
 result_dl=cbind(result_dl,dl)
 
 return(result_dl)
-} 
+}
 
 if (method %in% c("ef")) {
-    
+
 edges =link_table_row
-OTUs = OTUabd 
+OTUs = OTUabd
 distances = data
 
 OTUs_order = OTUs[,order(names(OTUs))]
@@ -91,6 +93,6 @@ ef=rep("yes",times=nrow(result_ef))
 result_ef=cbind(result_ef,ef)
 
 return(result_ef)
-} 
+}
 }
 

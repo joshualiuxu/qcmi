@@ -1,7 +1,9 @@
-#' Calculating the contributions of microbial interaction on alpha diversity
+#' Calculating the contributions of putative biotic associations on alpha diversity
+#'
 #' @param env_data
 #' @param  method
 #' @param   ps
+#'
 #' @examples
 #' @return
 #' @author Contact: Xu Liu \email{xliu@@issas.ac.cn}

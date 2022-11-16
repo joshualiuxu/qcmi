@@ -2,7 +2,7 @@
 % Please edit documentation in R/cal_betacon.R
 \name{cal_betacon}
 \alias{cal_betacon}
-\title{Calculating the contributions of microbial interaction on beta diversity}
+\title{Calculating the contributions of putative biotic associations on beta diversity}
 \usage{
 cal_betacon(env_data = data, otu_abd = otu, method = c("pearson", "spearman"))
 }
@@ -11,14 +11,8 @@ cal_betacon(env_data = data, otu_abd = otu, method = c("pearson", "spearman"))
 
 \item{method}{}
 }
-\value{
-
-}
 \description{
-Calculating the contributions of microbial interaction on beta diversity
-}
-\references{
-
+Calculating the contributions of putative biotic associations on beta diversity
 }
 \author{
 Contact: Xu Liu \email{xliu@issas.ac.cn}

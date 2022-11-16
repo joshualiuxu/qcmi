@@ -6,14 +6,8 @@
 \usage{
 zero(vec)
 }
-\value{
-
-}
 \description{
 Find the number of zeroes in a vector
-}
-\references{
-
 }
 \author{
 Contact: Xu Liu \email{xliu@issas.ac.cn}

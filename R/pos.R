@@ -6,6 +6,8 @@
 #' @references
 #' @export
 
+
+
 #create function that averages only positive values in a vector
 pos.mean <- function(vector){
   pos.vals <- vector[which(vector > 0)]

@@ -1,10 +1,12 @@
-#' Calculating the contributions of microbial interaction on beta diversity
-#' @param env_data 
-#' @param  otu_abd 
-#' @param   method 
+#' Calculating the contributions of putative biotic associations on beta diversity
+#'
+#' @param env_data
+#' @param  otu_abd
+#' @param   method
+#'
 #' @examples
-#' @return 
-#' @author Contact: Xu Liu \email{xliu@@issas.ac.cn} 
+#' @return
+#' @author Contact: Xu Liu \email{xliu@@issas.ac.cn}
 #' @references
 #' @export
 

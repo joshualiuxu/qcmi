@@ -2,7 +2,7 @@
 % Please edit documentation in R/test_link_env.R
 \name{test_link_env}
 \alias{test_link_env}
-\title{Classifying ecological associations of environmental filtering}
+\title{Classifying ecological associations into the process of environmental filtering}
 \usage{
 test_link_env(link_table_row, OTUabd, envdist)
 }
@@ -13,14 +13,8 @@ test_link_env(link_table_row, OTUabd, envdist)
 
 \item{envdist}{}
 }
-\value{
-
-}
 \description{
-Classifying ecological associations of environmental filtering
-}
-\references{
-
+Classifying ecological associations into the process of environmental filtering
 }
 \author{
 Contact: Xu Liu \email{xliu@issas.ac.cn}

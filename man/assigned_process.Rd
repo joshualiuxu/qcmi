@@ -24,14 +24,8 @@ assigned_process(
 
 \item{method}{}
 }
-\value{
-
-}
 \description{
 Identifying ecological associations as environmental filtering and dispersal limitation
-}
-\references{
-
 }
 \author{
 Contact: Xu Liu \email{xliu@issas.ac.cn}

@@ -2,7 +2,7 @@
 % Please edit documentation in R/test_link_dl.R
 \name{test_link_dl}
 \alias{test_link_dl}
-\title{Classifying ecological associations of dispersal limitation}
+\title{Classifying ecological associations into the process of dispersal limitation}
 \usage{
 test_link_dl(link_table_row, OTUabd, geodist)
 }
@@ -13,14 +13,8 @@ test_link_dl(link_table_row, OTUabd, geodist)
 
 \item{geodist}{}
 }
-\value{
-
-}
 \description{
-Classifying ecological associations of dispersal limitation
-}
-\references{
-
+Classifying ecological associations into the process of dispersal limitation
 }
 \author{
 Contact: Xu Liu \email{xliu@issas.ac.cn}

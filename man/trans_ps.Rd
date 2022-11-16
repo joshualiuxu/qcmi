@@ -4,16 +4,15 @@
 \alias{trans_ps}
 \title{Convert the data  to phyloseq format, including OTU table and taxa table}
 \usage{
-trans_ps(otu_table = otu_table, taxa_table = taxa_table)
-}
-\value{
-
+trans_ps(
+  otu_table = otu_table,
+  taxa_table = taxa_table,
+  sample_data = NULL,
+  phylo = NULL
+)
 }
 \description{
 Convert the data  to phyloseq format, including OTU table and taxa table
-}
-\references{
-
 }
 \author{
 Contact: Xu Liu \email{xliu@issas.ac.cn}

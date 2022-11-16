@@ -1,21 +1,23 @@
-#' Correlation network calculation of microbial community data
-#' @param filteredps
-#' @param  N 
-#' @param  r.threshold 
-#' @param   p.threshold 
-#' @param   lambda.min.ratio 
-#' @param   nlambda 
-#' @param   ncores 
-#' @param   method 
-#' @return 
-#' @author Contact: Xu Liu \email{xliu@@issas.ac.cn} 
+#' Construct ecological networks using sequencing-based community data
+#'
+#' @param   N
+#' @param   r.threshold
+#' @param   p.threshold
+#' @param   lambda.min.ratio
+#' @param   nlambda
+#' @param   ncores
+#' @param   ps
+#' @param   method
+#'
+#' @return
+#' @author Contact: Xu Liu \email{xliu@@issas.ac.cn}
 #' @references
 #' @export
 
 
 cal_network = function(ps = filteredps, N = 0,r.threshold=0.6,
-                    p.threshold=0.05,lambda.min.ratio=1e-2,nlambda=20,ncores=4,method =c("spearman","pearson","spieceasi") ){
-                  
+                    p.threshold=0.05,lambda.min.ratio=1e-2,nlambda=20,ncores=1,method =c("spearman","pearson","spieceasi") ){
+
 
 if (method %in% c("spearman")) {
     ps_sub = filter_OTU_ps(ps = ps,Top = N)
@@ -27,14 +29,14 @@ if (method %in% c("spearman")) {
     occor.r[occor.p > p.threshold | abs(occor.r)<r.threshold] = 0
     ig.wgcna = graph_from_adjacency_matrix(occor.r,mode="undirected",weighted=TRUE,diag=FALSE)
 
-    
+
     result=list(occor.r,occor.p,method,ps_sub,ig.wgcna)
     names(result)[1] <- "occor.r"
     names(result)[2] <- "occor.p"
     names(result)[3] <- "method"
     names(result)[4] <- "phyloseq"
     names(result)[5] <- "igraph"
-} 
+}
 
 if (method %in% c("pearson")) {
     ps_sub = filter_OTU_ps(ps = ps,Top = N)
@@ -52,7 +54,7 @@ if (method %in% c("pearson")) {
     names(result)[3] <- "method"
     names(result)[4] <- "phyloseq"
     names(result)[5] <- "igraph"
-} 
+}
 
 if (method %in% c("spieceasi")) {
 
@@ -74,8 +76,8 @@ if (method %in% c("spieceasi")) {
     names(result)[4] <- "phyloseq"
     names(result)[5] <- "igraph"
 	names(result)[6] <- "result.se"
-} 
+}
 
     return(result)
-    
-} 
+
+}

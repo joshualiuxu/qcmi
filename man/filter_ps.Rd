@@ -11,14 +11,8 @@ filter_ps(ps = ps, occurrence.threshold = 0, abundance.threshold = 0)
 
 \item{abundance.threshold}{}
 }
-\value{
-
-}
 \description{
 Filter OTU table by occurrence and abundance
-}
-\references{
-
 }
 \author{
 Contact: Xu Liu \email{xliu@issas.ac.cn}

@@ -1,7 +1,9 @@
 #' Filter OTU table by occurrence and abundance
+#'
 #' @param ps
 #' @param  occurrence.threshold
 #' @param  abundance.threshold
+#'
 #' @examples
 #' @return
 #' @author Contact: Xu Liu \email{xliu@@issas.ac.cn}

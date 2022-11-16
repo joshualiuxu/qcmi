@@ -2,7 +2,7 @@
 % Please edit documentation in R/cal_alphacon.R
 \name{cal_alphacon}
 \alias{cal_alphacon}
-\title{Calculating the contributions of microbial interaction on alpha diversity}
+\title{Calculating the contributions of putative biotic associations on alpha diversity}
 \usage{
 cal_alphacon(env_data = data, method = c("forward.sel", "olslm"), ps = ps)
 }
@@ -11,14 +11,8 @@ cal_alphacon(env_data = data, method = c("forward.sel", "olslm"), ps = ps)
 
 \item{ps}{}
 }
-\value{
-
-}
 \description{
-Calculating the contributions of microbial interaction on alpha diversity
-}
-\references{
-
+Calculating the contributions of putative biotic associations on alpha diversity
 }
 \author{
 Contact: Xu Liu \email{xliu@issas.ac.cn}

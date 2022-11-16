@@ -1,4 +1,4 @@
-#' Classifying ecological associations of environmental filtering
+#' Classifying ecological associations into the process of environmental filtering
 #' @param   link_table_row
 #' @param   OTUabd
 #' @param   envdist

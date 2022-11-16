@@ -1,4 +1,4 @@
-#' Quantify the local intensity of microbial biotic interaction
+#' Quantify the strength of putative biotic associations at the community level
 #' @param igraph
 #' @param  OTU
 #' @param   pers.cutoff

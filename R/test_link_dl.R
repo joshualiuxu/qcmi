@@ -1,4 +1,4 @@
-#' Classifying ecological associations of dispersal limitation
+#' Classifying ecological associations into the process of dispersal limitation
 #' @param   link_table_row
 #' @param   OTUabd
 #' @param   geodist

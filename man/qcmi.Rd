@@ -2,7 +2,7 @@
 % Please edit documentation in R/qcmi.R
 \name{qcmi}
 \alias{qcmi}
-\title{Quantify the local intensity of microbial biotic interaction}
+\title{Quantify the strength of putative biotic associations at the community level}
 \usage{
 qcmi(igraph, OTU, pers.cutoff = 0)
 }
@@ -11,14 +11,8 @@ qcmi(igraph, OTU, pers.cutoff = 0)
 
 \item{pers.cutoff}{}
 }
-\value{
-
-}
 \description{
-Quantify the local intensity of microbial biotic interaction
-}
-\references{
-
+Quantify the strength of putative biotic associations at the community level
 }
 \author{
 Contact: Xu Liu \email{xliu@issas.ac.cn}

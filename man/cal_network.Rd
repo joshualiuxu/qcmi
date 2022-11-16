@@ -2,14 +2,17 @@
 % Please edit documentation in R/cal_network.R
 \name{cal_network}
 \alias{cal_network}
-\title{Correlation network calculation of microbial community data}
+\title{Construct ecological networks using sequencing-based community data}
 \usage{
 cal_network(
   ps = filteredps,
   N = 0,
   r.threshold = 0.6,
   p.threshold = 0.05,
-  method = c("spearman", "pearson")
+  lambda.min.ratio = 0.01,
+  nlambda = 20,
+  ncores = 1,
+  method = c("spearman", "pearson", "spieceasi")
 )
 }
 \arguments{
@@ -19,16 +22,16 @@ cal_network(
 
 \item{p.threshold}{}
 
+\item{lambda.min.ratio}{}
+
+\item{nlambda}{}
+
+\item{ncores}{}
+
 \item{method}{}
 }
-\value{
-
-}
 \description{
-Correlation network calculation of microbial community data
-}
-\references{
-
+Construct ecological networks using sequencing-based community data
 }
 \author{
 Contact: Xu Liu \email{xliu@issas.ac.cn}
