@@ -40,7 +40,7 @@ qcmi = function(igraph, OTU,pers.cutoff=0){
   interaction.neg <- rel.d %*% connectedness.neg
 
   output <- list(connectedness.neg, connectedness.pos, interaction.neg, interaction.pos)
-  names(output) <- c("connectedness", "connectedness.pos", "interaction.neg", "interaction.pos")
+  names(output) <- c("connectedness.neg", "connectedness.pos", "interaction.neg", "interaction.pos")
 
   return(output)
 }
