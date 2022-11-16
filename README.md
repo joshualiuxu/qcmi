@@ -17,12 +17,12 @@ qcmi provides some convenient verbs to make it easy to process data and results:
 
   + Step 2. Assign the ecological assembly processes to each significantly pair ASVs. 📈
 
-  + Step 3. Quantify the strength of biotic associations to each local site. 📊
+  + Step 3. Quantify the strength of putative biotic associations to each local site. 📊
 
-  + Step 4. Calculate the effects of biotic associations on alpha and beta diversity of microbial communities. ❤️
+  + Step 4. Calculate the effects of putative biotic associations on alpha and beta diversity of microbial communities. ❤️
 
 
-<img src="https://github.com/joshualiuxu/qcmi/blob/main/data/Figure2.jpg" width="80%" />
+<img src="https://github.com/joshualiuxu/qcmi/blob/main/data/Figure1.jpg" width="80%" />
 
 
 ## Function
@@ -37,15 +37,15 @@ qcmi provides some convenient verbs to make it easy to process data and results:
 
   + test_link_dl() classifies the ecological associations to dispersal limitation
 
-  + assigned_process() identifies ecological associations as environmental filtering and dispersal limitation
+  + assigned_process() identifies ecological associations as environmental filtering and dispersal limitation to dig out putative biotic associations from complex ecological networks
 
-  + qcmi() quantifies the local intensity of microbial biotic associations.
+  + qcmi() quantifies the strength of microbial biotic associations at the community level.
 
   + cal_alphacon() calculates the contributions of microbial associations on alpha diversity
 
   + cal_betacon() calculates the contributions of microbial associations on beta diversity
 
-For a detailed introduction, please see qcmi.test.r.
+For a detailed introduction, please see qcmi.tutorial.r.
 
 
 
@@ -69,7 +69,7 @@ If you find a bug, please file a minimal reproducible example in the issues
 
 ## Usage
 
-Please see the document of qcmi.test.r
+Please see the document of qcmi.tutorial.r
 
 
 ## Contributing
@@ -84,7 +84,7 @@ Here are some simple ways in which you can contribute (in the increasing
 order of commitment):
 
 -   Read and correct any inconsistencies in the
-    [documentation](https://github.com/joshualiuxu/qcmi/blob/main/qcmi.test.r)
+    [documentation](https://github.com/joshualiuxu/qcmi/blob/main/qcmi.tutorial.r)
 
 -   Raise issues about bugs or wanted features
 
