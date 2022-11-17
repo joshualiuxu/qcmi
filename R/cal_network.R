@@ -66,7 +66,7 @@ if (method %in% c("spieceasi")) {
     ig.mb  <- adj2igraph(getRefit(se.net), vertex.attr= list(label = row.names( filteredps@otu_table)))
 
     sebeta <- symBeta(getOptBeta(se.net), mode='maxabs')
-    elist.mb     <- summary(sebeta)
+    elist.mb     <- Matrix::summary(sebeta)
 
 
     result=list(sebeta,elist.mb ,method,ps_sub1,ig.mb,se.net)
