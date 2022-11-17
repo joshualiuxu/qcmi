@@ -1,4 +1,4 @@
-# *QCMI*
+# QCMI*: Quantify Community-level Microbial Interactions*
 # An R package for easy modeling, filtering, and quantifying putative biotic associations of microbial communities.
 
 <a href="https://github.com/joshualiuxu/qcmi/blob/main/qcmi.test.r/"><img src="https://github.com/joshualiuxu/qcmi/blob/main/data/fig.jpg" width=150 align="right" ></a>
@@ -6,7 +6,7 @@
 
 ## Overview
 
-qcmi calculates the strength of biotic associations and quantifies the contributions on microbial diversity. 
+qcmi calculates the strength of putative biotic associations and quantifies the contributions on microbial diversity. 
 
 qcmi provides some convenient verbs to make it easy to process data and results:
 
@@ -33,6 +33,8 @@ qcmi provides some convenient verbs to make it easy to process data and results:
 
   + cal_network() infers ecological networks.
 
+  + rmt() filters correlation coefficient.
+
   + test_link_env() classifies the ecological associations to environmental filtering
 
   + test_link_dl() classifies the ecological associations to dispersal limitation
@@ -45,7 +47,7 @@ qcmi provides some convenient verbs to make it easy to process data and results:
 
   + cal_betacon() calculates the contributions of microbial associations on beta diversity
 
-For a detailed introduction, please see qcmi.tutorial.r.
+For a detailed introduction, please see Tutorial.r.
 
 
 
@@ -84,7 +86,7 @@ Here are some simple ways in which you can contribute (in the increasing
 order of commitment):
 
 -   Read and correct any inconsistencies in the
-    [documentation](https://github.com/joshualiuxu/qcmi/blob/main/qcmi.tutorial.r)
+    [documentation](https://github.com/joshualiuxu/qcmi/blob/main/Tutorial.r)
 
 -   Raise issues about bugs or wanted features
 
@@ -98,5 +100,5 @@ order of commitment):
 
 Not yet QAQ 👻👻👻
 
-
+On the way 🌱🌱🌱
 
