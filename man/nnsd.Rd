@@ -2,15 +2,12 @@
 % Please edit documentation in R/nnsd.r
 \name{nnsd}
 \alias{nnsd}
-\title{Accessory function in Random Matrix Theory}
+\title{Accessory function for Random Matrix Theory}
 \usage{
 nnsd(sp)
 }
-\arguments{
-\item{sp}{}
-}
 \description{
-Accessory function in Random Matrix Theory
+Accessory function for Random Matrix Theory
 }
 \author{
 Contact: Xu Liu \email{xliu@issas.ac.cn}

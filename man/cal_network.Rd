@@ -16,6 +16,8 @@ cal_network(
 )
 }
 \arguments{
+\item{ps}{}
+
 \item{N}{}
 
 \item{r.threshold}{}
