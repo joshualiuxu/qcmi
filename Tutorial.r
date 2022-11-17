@@ -1,12 +1,12 @@
 #   qcmi.test.r
-#   version 2022.10.28
-#	a method to quantify the effects of biotic filtering on the variations of microbial alpha- and beta-diversity
+#   version 2022.11.16
+#	a method to quantify the effects of putative biotic associations on the variations of microbial alpha- and beta-diversity
 
 rm(list=ls())
 
 #   计算消耗时间
 #   to calculate time cost
-t0=Sys.time()  
+t0=Sys.time()
 
 #   加载相关R包
 #   load R packages
@@ -21,8 +21,9 @@ library("qcmi")
 
 #   设置工作路径
 #   the folder saving the input files
-wd="D:\\YANJIUSHENG\\method\\qcmi\\bac"
-save.wd="D:\\YANJIUSHENG\\method\\qcmi\\bac"
+wd="./data"
+save.wd="./data"
+if(!dir.exists(wd)){dir.create(wd)}
 
 # 1 # 整理涉及到的数据，计算微生物共存网络
 # 1 # Collate the data involved and calculate the microbial correlation network
@@ -38,7 +39,7 @@ if(!dir.exists(save.wd)){dir.create(save.wd)}
 setwd(save.wd)
 
 #   数据格式转化为phyloseq
-#   The data format is transformed into the phyloseq  
+#   The data format is transformed into the phyloseq
 ps= trans_ps(otu_table = otu, taxa_table =  tax)
 
 #   按照频率和丰度过滤数据集
@@ -48,7 +49,17 @@ filteredps
 
 #   通过不同的方法构建原始的生态网络
 #   Through different methods to construct the original ecological network. (e.g., Pearson, Spearman, SpiecEasi)
-result_net= cal_network(ps = filteredps,lambda.min.ratio=1e-2,nlambda=20,ncores=1,method ="spieceasi") 
+result_net= cal_network(ps = filteredps,N=100,lambda.min.ratio=1e-2,nlambda=20,ncores=1,method ="spieceasi")
+
+#	可选的
+#	Optional
+#	如果计算Pearson和Spearman相关性需要RMT算法过滤相关系数，则计算rmt指令。
+#	If the calculation of Pearson and Spearman correlations requires the RMT algorithm to filter the correlation coefficients, the RMT function wiil be calculated.
+	result_net1 = cal_network(ps = filteredps,N=100,r.threshold=0,p.threshold=0.05,method ="pearson")
+	adj_mat=result_net1$occor.r
+	tc1 <- rmt(adj_mat ,lcor=0.5, hcor=0.8)
+	message("The optimized COR threshold: ", tc1, "...\n")
+	adj_mat[abs(adj_mat)< tc1] = 0
 
 #   评估网络可靠性
 #   To evaluate the network stability (around 0.05 is acceptable)
@@ -74,7 +85,7 @@ hist(result_net$elist[,3], main='', xlab='edge weights')
 edgelist=result_net$elist
 
 #   保存edgelist格式文件
-#   Save the edgelist file  
+#   Save the edgelist file
 write.csv(edgelist,file="edgelist.csv")
 
 #   导入edgelist格式文件三联表
@@ -134,7 +145,7 @@ biedge <- read.csv("biedge.csv")
 biedge=biedge[which( biedge[,4]=='bi'),]
 
 #   转化为igraph格式并赋值weight
-#   Convert to igraph format and assign weight  
+#   Convert to igraph format and assign weight
 ig.bi=graph_from_edgelist(as.matrix(biedge[,1:2]) , directed = FALSE)
 ig.bi=set_edge_attr(ig.bi, 'weight', index = E(ig.bi),  as.numeric(biedge[,3]) )
 
@@ -146,16 +157,16 @@ data=cbind(result_bi[[3]],result_bi[[4]],env)
 
 
 #   检测生物互作与非生物环境因子对微生物多样性分布格局的影响，包括alpha多样性和beta多样性
-#   The effects of biotic interactions and abiotic factors on microbial diversity patterns, including alpha diversity and beta diversity, were examined  
+#   The effects of biotic interactions and abiotic factors on microbial diversity patterns, including alpha diversity and beta diversity, were examined
 #alpha
 library(MASS)
 library(adespatial)
-library(lmerTest)   
+library(lmerTest)
 
 #data=scale(data,center=T,scale=T)
 data=cbind(result_bi[[3]],result_bi[[4]],env)
 colnames(data)=c("NC","PC",colnames(env))
-data=as.matrix(data)  
+data=as.matrix(data)
 res_forward.sel=cal_alphacon(data,"forward.sel",filteredps)
 res_forward.sel
 
