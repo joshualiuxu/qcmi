@@ -11,16 +11,7 @@
 #following by an RMT-based approach that determines the correlation cut-off threshold in an automatic fashion. 
 #Random matrix theory was initially proposed in the 1960s as a procedure to identify phase transitions associated with noise in physics and material science,
 #and was later adopted for studying the behaviours of many other complex systems, including gene co-expression network construction for
-#predicting gene functions and molecular ecological network construction.
-
-nnsd = function(sp){
-			nns <- NULL
-			for(j in 2:length(sp)){
-				nn <- abs(sp[j] - sp[j-1])
-				nns <- c(nns, nn)
-			}
-			nns
-		}
+#predicting gene functions and molecular ecological network construction.	
 rmt = function(cormat,lcor=0.6, hcor=0.8){
     s <- seq(0, 3, 0.1)
     pois <- exp(-s)
