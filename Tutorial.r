@@ -1,5 +1,5 @@
 #   qcmi.test.r
-#   version 2022.11.16
+#   version 2023.01.07
 #	a method to quantify the effects of putative biotic associations on the variations of microbial alpha- and beta-diversity
 
 rm(list=ls())
