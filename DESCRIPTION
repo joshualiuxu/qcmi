@@ -1,10 +1,10 @@
 Package: qcmi
-Title: Quantify putative biotic associations of microbes at the community level
+Title: Quantify Community-level Microbial Interactions
 Version: 0.1.2
 Authors@R: 
     person("Xu", "Liu", , "xliu@issas.ac.cn", role = c("aut", "cre"),
            comment = c(ORCID = "0000-0002-7069-4509"))
-Description: A workflow to dig out putative biotic associations from complex ecological associations and quantify at the community level, which had been compiled as ‘qcma’ R package. 
+Description: A workflow to dig out putative biotic associations from complex ecological associations and quantify them at the community level, which had been compiled as 'qcmi' R package. 
 The method consists of four main steps: (ⅰ) constructing ecological networks, (ⅱ) assigning assembly processes, (ⅲ) quantifying biotic associations, and (ⅳ) assessing ecological consequence. Each step has been encapsulated as user-friendly functions that could be easily feasible and flexible. Besides, this package is developed based on a series of commonly used and advanced approaches in microbial ecology, for example, Spiec-Easi.
 License: MIT + file LICENSE
 Encoding: UTF-8
