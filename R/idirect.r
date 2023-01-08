@@ -8,7 +8,8 @@
 #' @export
 
 #idirect
-#idirect addresses the three main problems of ill-conditioning, self-loop and interaction strength overflow that may exist in previous methods 
+#The function of idirect addresses the three main problems of ill-conditioning, self-loop and interaction strength overflow that may exist in previous methods, e.g., Pearson and Spearman
+#Note that since idirect is compiled from python, the  function only provides support for py3.5 3.8 3.9, cited by Xiao et al., 2022.
 
 idirect = function(pathname=NULL, filename = NULL, outputname = NULL){
 
