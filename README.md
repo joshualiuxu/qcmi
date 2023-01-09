@@ -1,7 +1,7 @@
 # *QCMI: Quantify Community-level Microbial Interactions*
 # An R package for easy modeling, filtering, and quantifying putative biotic associations of microbes at the community level.
 
-<a href="https://github.com/joshualiuxu/qcmi/blob/main/qcmi.test.r/"><img src="https://github.com/joshualiuxu/qcmi/blob/main/data/fig.jpg" width=150 align="right" ></a>
+<a href="https://github.com/joshualiuxu/qcmi/blob/main/instruction vigette.html/"><img src="https://github.com/joshualiuxu/qcmi/blob/main/data/fig.jpg" width=150 align="right" ></a>
 
 
 ## Overview
