@@ -1,12 +1,12 @@
 # *QCMI: Quantify Community-level Microbial Interactions*
 # An R package for easy modeling, filtering, and quantifying putative biotic associations of microbes at the community level.
 
-<a href="https://github.com/joshualiuxu/qcmi/blob/main/instruction vigette.html/"><img src="https://github.com/joshualiuxu/qcmi/blob/main/data/fig.jpg" width=150 align="right" ></a>
+<a href="https://joshualiuxu.github.io/"><img src="https://github.com/joshualiuxu/qcmi/blob/main/data/fig.jpg" width=150 align="right" ></a>
 
 
 ## Overview
 
-qcmi calculates the strength of putative biotic associations and quantifies the contributions on microbial diversity. 
+qcmi quantifies the strength of putative biotic associations of microbes at the community level and assesses the ecological consequences caused by biotic associations
 
 qcmi provides some convenient verbs to make it easy to process data and results:
 
@@ -17,12 +17,12 @@ qcmi provides some convenient verbs to make it easy to process data and results:
 
   + Step 2. Assign the ecological assembly processes to each significantly pair ASVs. 📈
 
-  + Step 3. Quantify the strength of putative biotic associations to each local site. 📊
+  + Step 3. Quantify the strength of putative biotic associations to each local site (at the community level). 📊
 
   + Step 4. Calculate the effects of putative biotic associations on alpha and beta diversity of microbial communities. ❤️
 
 
-<img src="https://github.com/joshualiuxu/qcmi/blob/main/data/Figure1.jpg" width="80%" />
+<img src="https://github.com/joshualiuxu/qcmi/blob/main/data/Figure1.jpg" width="80%" align="center"  />
 
 
 ## Function
@@ -34,6 +34,8 @@ qcmi provides some convenient verbs to make it easy to process data and results:
   + cal_network() infers ecological networks.
 
   + rmt() filters correlation coefficient.
+
+  + idirect() disentangles the direct relationships from indirect relationships in the networks
 
   + test_link_env() classifies the ecological associations to environmental filtering
 
@@ -47,7 +49,7 @@ qcmi provides some convenient verbs to make it easy to process data and results:
 
   + cal_betacon() calculates the contributions of microbial associations on beta diversity
 
-For a detailed introduction, please see Tutorial.r.
+For a detailed introduction, please see https://joshualiuxu.github.io/.
 
 
 
@@ -71,8 +73,7 @@ If you find a bug, please file a minimal reproducible example in the issues
 
 ## Usage
 
-Please see the document of qcmi.tutorial.r
-
+Please see the document of qcmi.tutorial.r or view the website https://joshualiuxu.github.io/
 
 ## Contributing
 
@@ -86,7 +87,7 @@ Here are some simple ways in which you can contribute (in the increasing
 order of commitment):
 
 -   Read and correct any inconsistencies in the
-    [documentation](https://github.com/joshualiuxu/qcmi/blob/main/Tutorial.r)
+    [documentation](https://joshualiuxu.github.io/)
 
 -   Raise issues about bugs or wanted features
 
@@ -98,7 +99,7 @@ order of commitment):
 
 ## Citation
 
-Not yet QAQ 👻👻👻
+Xu Liu, Yu Shi, Teng Yang, Gui-Feng Gao, Haiyan Chu. 2023. QCMI: A method for quantifying putative biotic associations of microbes at the community level.
 
 On the way 🌱🌱🌱
 
