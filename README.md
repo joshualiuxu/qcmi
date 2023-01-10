@@ -23,7 +23,12 @@ qcmi provides some convenient verbs to make it easy to process data and results:
   + Step 4. Calculate the effects of putative biotic associations on alpha and beta diversity of microbial communities. ❤️
 
 
+
+
+
 <img src="https://github.com/joshualiuxu/qcmi/blob/main/data/Figure1.jpg" width="70%" align="center"/></a>
+
+
 
 
 ## Function
