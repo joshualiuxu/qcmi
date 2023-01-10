@@ -1,4 +1,5 @@
 # *QCMI: Quantify Community-level Microbial Interactions*
+
 # An R package for easy modeling, filtering, and quantifying putative biotic associations of microbes at the community level.
 
 <a href="https://joshualiuxu.github.io/"><img src="https://github.com/joshualiuxu/qcmi/blob/main/data/fig.jpg" width=150 align="right" ></a>
@@ -22,7 +23,7 @@ qcmi provides some convenient verbs to make it easy to process data and results:
   + Step 4. Calculate the effects of putative biotic associations on alpha and beta diversity of microbial communities. ❤️
 
 
-<img src="https://github.com/joshualiuxu/qcmi/blob/main/data/Figure1.jpg" width="80%" align="center"  />
+<img src="https://github.com/joshualiuxu/qcmi/blob/main/data/Figure1.jpg" width="80%" align="center"/>
 
 
 ## Function
