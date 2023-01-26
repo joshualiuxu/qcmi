@@ -70,7 +70,7 @@ devtools::install_github("joshualiuxu/qcmi")
 
 load the package:
 ```r
-library(“qcmi”)
+library("qcmi")
 ```
 
 If you find a bug, please file a minimal reproducible example in the issues
