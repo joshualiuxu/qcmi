@@ -103,9 +103,11 @@ order of commitment):
     helpers for preparing subtitles)
 
 
-## Citation
+## Citation 🌱🌱🌱
 
 Xu Liu, Yu Shi, Teng Yang, Gui-Feng Gao, Haiyan Chu. 2023. QCMI: A method for quantifying putative biotic associations of microbes at the community level.
 
-On the way 🌱🌱🌱
+Article DOI: 10.1002/imt2.92
+Article: QCMI: A method for quantifying putative biotic associations of microbes at the community level
+Journal: iMeta
 
