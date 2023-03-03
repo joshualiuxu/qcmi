@@ -63,7 +63,7 @@ if (method %in% c("spieceasi")) {
     require(Matrix)
     ps_sub1 = filter_OTU_ps(ps = ps,Top = N)
     se.net <- spiec.easi(ps_sub1, method='mb', lambda.min.ratio=lambda.min.ratio, nlambda=nlambda, pulsar.params=list(rep.num=50, ncores=ncores))
-    ig.mb  <- adj2igraph(getRefit(se.net), vertex.attr= list(label = row.names( filteredps@otu_table)))
+    ig.mb  <- adj2igraph(getRefit(se.net), vertex.attr= list(label = row.names( ps_sub1@otu_table)))
 
     sebeta <- symBeta(getOptBeta(se.net), mode='maxabs')
     elist.mb     <- Matrix::summary(sebeta)

@@ -53,7 +53,7 @@ distances = data
 
 OTUs_order = OTUs[,order(names(OTUs))]
 distances_order = distances[order(row.names(distances)),]
-envdist = vegdist(distances_order, method="euclid")
+envdist = vegdist(distances_order, method="euclid",na.rm = TRUE)
 
 
 #scene1: positive links   double positive covary with env
